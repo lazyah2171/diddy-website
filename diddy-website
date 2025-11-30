@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manhattan Manhunt: Puff Daddy Chase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mta: {
+                            blue: '#0039A6',
+                            red: '#EE352E',
+                            green: '#00933C',
+                            yellow: '#FCCC0A',
+                            gray: '#A7A9AC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Navigation Component -->
+    <script src="components/navbar.js"></script>
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-mta-gray overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-mta-yellow">THE CITY IS YOUR BOARD</h1>
+            <h2 class="text-3xl md:text-5xl font-bold mb-8 text-white">CATCH PUFF DADDY</h2>
+            
+            <!-- Hype Counter -->
+            <div class="bg-mta-blue p-6 rounded-lg shadow-lg mb-8 animate-pulse">
+                <div class="flex items-center justify-center">
+                    <i data-feather="alert-circle" class="text-mta-yellow mr-2"></i>
+                    <span class="text-2xl md:text-4xl font-mono font-bold text-white">12,000,000+ PRE-ORDERS</span>
+                </div>
+            </div>
+            
+            <a href="#preorder" class="bg-mta-red hover:bg-mta-yellow text-white hover:text-black font-bold py-4 px-8 rounded-full text-xl transition-all duration-300 transform hover:scale-105 flex items-center">
+                <i data-feather="shopping-cart" class="mr-2"></i> PRE-ORDER NOW
+            </a>
+        </div>
+    </section>
+
+    <!-- USP Section -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">THE ULTIMATE SUBWAY CHASE</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-mta-blue p-8 rounded-lg text-center">
+                    <i data-feather="map" class="w-16 h-16 mx-auto mb-4 text-mta-yellow"></i>
+                    <h3 class="text-2xl font-bold mb-4">Strategize</h3>
+                    <p>Plan your moves across Manhattan's subway lines to corner the fugitive</p>
+                </div>
+                <div class="bg-mta-red p-8 rounded-lg text-center">
+                    <i data-feather="search" class="w-16 h-16 mx-auto mb-4 text-mta-yellow"></i>
+                    <h3 class="text-2xl font-bold mb-4">Hunt</h3>
+                    <p>Track Puff Daddy's movements and predict his next location</p>
+                </div>
+                <div class="bg-mta-green p-8 rounded-lg text-center">
+                    <i data-feather="eye-off" class="w-16 h-16 mx-auto mb-4 text-mta-yellow"></i>
+                    <h3 class="text-2xl font-bold mb-4">Hide</h3>
+                    <p>As Puff Daddy, use wild cards and subway tricks to evade capture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Demo Section -->
+    <section class="py-20 bg-mta-gray">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">THE CHASE IS ON</h2>
+            <div class="bg-black p-8 rounded-lg">
+                <div class="flex justify-between items-center mb-8">
+                    <div class="bg-mta-red p-4 rounded-lg">
+                        <h3 class="text-xl font-bold">TURN: <span id="turn-counter" class="text-mta-yellow">1</span>/15</h3>
+                    </div>
+                    <div class="bg-mta-blue p-4 rounded-lg">
+                        <h3 class="text-xl font-bold">STATUS: <span id="status-indicator" class="text-mta-yellow">HUNTING</span></h3>
+                    </div>
+                </div>
+                
+                <!-- Interactive Map Placeholder -->
+                <div class="relative bg-mta-gray h-96 rounded-lg overflow-hidden mb-8">
+                    <div id="game-map" class="h-full w-full relative" style="background-image: url('https://drive.google.com/file/d/1bS4N1JbOYGJ-jk60itiS-sefwMCWgvhy/view?usp=drive_link'); background-size: cover; background-position: center;">
+<!-- Map elements will be added via JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-mta-green p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-mta-yellow">Detectives Win</h3>
+                        <p>If Puff Daddy is caught before turn 15</p>
+                    </div>
+                    <div class="bg-mta-red p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-mta-yellow">Puff Daddy Wins</h3>
+                        <p>If he evades capture for all 15 turns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-order Section -->
+    <section id="preorder" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">JOIN THE MANHUNT</h2>
+            <div class="max-w-3xl mx-auto bg-mta-blue p-8 rounded-lg">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                        <img src="http://static.photos/technology/640x360/42" alt="Manhattan Manhunt Game Box" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold mb-4">Manhattan Manhunt</h3>
+                        <p class="mb-6">The ultimate hidden-movement board game set in NYC's subway system</p>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <i data-feather="clock" class="mr-2 text-mta-yellow"></i>
+                                <span>Average Playtime: <span class="font-bold">15m 23s</span></span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="dollar-sign" class="mr-2 text-mta-yellow"></i>
+                                <span>Production Cost: <span class="font-bold">$6.70</span> per unit</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="text-xl font-bold mb-2">What's Included:</h4>
+                            <ul class="list-disc pl-5">
+                                <li>Game board of Manhattan subway system</li>
+                                <li>3 Detective pawns</li>
+                                <li>1 Puff Daddy fugitive pawn</li>
+                                <li>18 Turn cards</li>
+                                <li>5 Wild cards</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="w-full bg-mta-red hover:bg-mta-yellow text-white hover:text-black font-bold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center">
+                            <i data-feather="shopping-cart" class="mr-2"></i> PRE-ORDER NOW - $19.99
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-mta-gray">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">WHAT THEY'RE SAYING</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-black p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                    </div>
+                    <p class="italic mb-4">"This game captures the thrill of the chase like nothing else. I play it with my kids every weekend!"</p>
+                    <p class="font-bold">- Sean Combs</p>
+                </div>
+                <div class="bg-black p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                    </div>
+                    <p class="italic mb-4">"The perfect blend of strategy and suspense. Our game nights will never be the same."</p>
+                    <p class="font-bold">- Walter Wong</p>
+                </div>
+                <div class="bg-black p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-2"></i>
+                    </div>
+                    <p class="italic mb-4">"95% of our testers preferred this over Monopoly. Need we say more?"</p>
+                    <p class="font-bold">- Game Testers United</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <script src="components/footer.js"></script>
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+
+</body>
+</html>
