@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MANHATTAN MANHUNT</title>
+    <title>Subway Showdown: Puff Daddy Chase</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
@@ -48,10 +48,9 @@
 </head>
 <body class="bg-black text-white font-sans">
     
-    <!-- Navigation Component (Simplified for one-file context) -->
-    <nav class="bg-mta-blue p-4 shadow-xl sticky top-0 z-20">
+    <!-- Navigation Component (Simplified for one-file context) --><nav class="bg-mta-blue p-4 shadow-xl sticky top-0 z-20">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-mta-yellow tracking-wider">Manhattan Manhunt</a>
+            <a href="#" class="text-2xl font-bold text-mta-yellow tracking-wider">SUBWAY SHOWDOWN</a>
             <div class="space-x-4 flex items-center">
                 <a href="#preorder" class="text-white hover:text-mta-yellow transition-colors font-semibold">Pre-Order</a>
                 <a href="#demo" class="text-white hover:text-mta-yellow transition-colors font-semibold">Demo</a>
@@ -60,14 +59,12 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen mta-bg-gradient overflow-hidden flex flex-col justify-center items-center text-center px-4">
+    <!-- Hero Section --><section class="relative h-screen mta-bg-gradient overflow-hidden flex flex-col justify-center items-center text-center px-4">
         <div class="relative z-10">
             <h1 class="text-5xl md:text-8xl font-black mb-6 text-mta-yellow drop-shadow-lg animate-fade-in-down">THE CITY IS YOUR BOARD</h1>
             <h2 class="text-3xl md:text-5xl font-bold mb-8 text-white drop-shadow-md animate-fade-in-up">CATCH PUFF DADDY</h2>
             
-            <!-- Hype Counter -->
-            <div class="bg-mta-red p-6 rounded-xl shadow-2xl mb-12 border-4 border-mta-yellow transform hover:scale-[1.02] transition-transform duration-500">
+            <!-- Hype Counter --><div class="bg-mta-red p-6 rounded-xl shadow-2xl mb-12 border-4 border-mta-yellow transform hover:scale-[1.02] transition-transform duration-500">
                 <div class="flex items-center justify-center">
                     <i data-feather="alert-circle" class="text-mta-yellow mr-2 w-6 h-6 md:w-8 h-8"></i>
                     <span class="text-xl md:text-4xl font-mono font-bold text-white tracking-wider">12,000,000+ PRE-ORDERS</span>
@@ -80,8 +77,7 @@
         </div>
     </section>
 
-    <!-- USP Section -->
-    <section class="py-20 bg-black">
+    <!-- USP Section --><section class="py-20 bg-black">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">THE ULTIMATE SUBWAY CHASE</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -104,8 +100,7 @@
         </div>
     </section>
 
-    <!-- Game Demo Section -->
-    <section id="demo" class="py-20 bg-black">
+    <!-- Game Demo Section --><section id="demo" class="py-20 bg-black">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">THE CHASE IS ON</h2>
             <div class="bg-black p-8 rounded-lg shadow-2xl">
@@ -118,21 +113,16 @@
                     </div>
                 </div>
                 
-                <!-- Working Interactive Map Demo -->
-                <!-- FIX: Replaced the local file path with a reliable, guaranteed-to-load placeholder image URL. -->
-                <div class="relative h-[500px] rounded-lg overflow-hidden mb-8 shadow-inner border-4 border-mta-yellow bg-mta-yellow">
-                    <!-- Image for the map background - now a guaranteed placeholder -->
-                    <img 
+                <!-- Working Interactive Map Demo --><!-- FIX: Replaced the local file path with a reliable, guaranteed-to-load placeholder image URL. --><div class="relative h-[500px] rounded-lg overflow-hidden mb-8 shadow-inner border-4 border-mta-yellow bg-mta-yellow">
+                    <!-- Image for the map background - now a guaranteed placeholder --><img 
                         src="https://placehold.co/800x500/EEEEEE/222222?text=NYC+Subway+Map+Placeholder"
                         alt="Interactive NYC Subway Map" 
                         class="w-full h-full object-cover absolute top-0 left-0 z-0"
                     >
                     
-                    <!-- SVG map overlay for lines and stations (z-10 to be on top of image) -->
-                    <svg id="subway-svg" class="w-full h-full absolute top-0 left-0 z-10" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+                    <!-- SVG map overlay for lines and stations (z-10 to be on top of image) --><svg id="subway-svg" class="w-full h-full absolute top-0 left-0 z-10" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
                     
-                    <!-- Game End Message Overlay -->
-                    <div id="game-message" class="absolute inset-0 bg-black/80 flex items-center justify-center hidden z-30">
+                    <!-- Game End Message Overlay --><div id="game-message" class="absolute inset-0 bg-black/80 flex items-center justify-center hidden z-30">
                         <div class="text-center p-8 bg-mta-yellow text-black rounded-lg shadow-2xl">
                             <h3 id="message-text" class="text-3xl font-bold mb-4"></h3>
                             <button id="reset-button" class="bg-mta-red text-white py-2 px-4 rounded font-bold hover:bg-mta-blue transition">Play Again</button>
@@ -154,8 +144,7 @@
         </div>
     </section>
 
-    <!-- Pre-order Section -->
-    <section id="preorder" class="py-20 bg-black">
+    <!-- Pre-order Section --><section id="preorder" class="py-20 bg-black">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">JOIN THE MANHUNT</h2>
             <div class="max-w-4xl mx-auto bg-mta-blue p-8 rounded-xl shadow-2xl border-4 border-mta-red">
@@ -203,10 +192,9 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-20 bg-mta-gray">
+    <!-- Testimonials --><section id="testimonials" class="py-20 bg-mta-gray">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">OUR REVIEWS & FEEDBACK</h2>
+            <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">WHAT THEY'RE SAYING</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-black p-8 rounded-lg shadow-xl border border-mta-red">
                     <div class="flex items-center mb-4">
@@ -214,9 +202,10 @@
                         <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
                         <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
                         <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
                     </div>
-                    <p class="italic mb-4 text-gray-300">"Needs more skill! Less luck!"</p>
-                    <p class="font-bold text-mta-yellow">- Walter Wong</p>
+                    <p class="italic mb-4 text-gray-300">"This game captures the thrill of the chase like nothing else. I play it with my kids every weekend!"</p>
+                    <p class="font-bold text-mta-yellow">- Sean Combs</p>
                 </div>
                 <div class="bg-black p-8 rounded-lg shadow-xl border border-mta-blue">
                     <div class="flex items-center mb-4">
@@ -224,9 +213,10 @@
                         <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
                         <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
                         <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
                     </div>
-                    <p class="italic mb-4 text-gray-300">"Pretty fun, but too repetitive."</p>
-                    <p class="font-bold text-mta-yellow">- Alex Bouw</p>
+                    <p class="italic mb-4 text-gray-300">"The perfect blend of strategy and suspense. Our game nights will never be the same."</p>
+                    <p class="font-bold text-mta-yellow">- Timo Kronish</p>
                 </div>
                 <div class="bg-black p-8 rounded-lg shadow-xl border border-mta-green">
                     <div class="flex items-center mb-4">
@@ -234,18 +224,540 @@
                         <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
                         <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
                         <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
                     </div>
-                    <p class="italic mb-4 text-gray-300">"Could use more islands."</p>
-                    <p class="font-bold text-mta-yellow">- Mr. E</p>
+                    <p class="italic mb-4 text-gray-300">"95% of our testers preferred this over Monopoly. Need we say more?"</p>
+                    <p class="font-bold text-mta-yellow">- Game Testers United</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Component (Simplified for one-file context) -->
-    <footer class="bg-mta-blue text-white p-8">
+    <!-- Rulebook Section --><section class="py-20 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-center mb-12 text-mta-yellow">GET A SNEAK PEEK AT THE RULES</h2>
+            <div class="max-w-3xl mx-auto bg-mta-blue p-6 rounded-xl shadow-2xl border-4 border-mta-red">
+                <img 
+                    src="<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Showdown: Puff Daddy Chase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mta: {
+                            blue: '#0039A6',
+                            red: '#EE352E',
+                            green: '#00933C',
+                            yellow: '#FCCC0A',
+                            gray: '#A7A9AC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Define custom classes for the subway theme aesthetics */
+        .mta-bg-gradient {
+            background: linear-gradient(135deg, #0039A6 0%, #000000 100%);
+        }
+        /* Custom styles for the interactive map elements */
+        .station-node {
+            cursor: pointer;
+            transition: r 0.15s, opacity 0.15s;
+        }
+        .station-node:hover {
+            opacity: 0.8;
+            r: 3.5;
+        }
+        .line-segment {
+            stroke: #A7A9AC; /* MTA Gray */
+            stroke-width: 0.8;
+        }
+        .player-pawn {
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+    
+    <!-- Navigation Component (Simplified for one-file context) --><nav class="bg-mta-blue p-4 shadow-xl sticky top-0 z-20">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-mta-yellow tracking-wider">SUBWAY SHOWDOWN</a>
+            <div class="space-x-4 flex items-center">
+                <a href="#preorder" class="text-white hover:text-mta-yellow transition-colors font-semibold">Pre-Order</a>
+                <a href="#demo" class="text-white hover:text-mta-yellow transition-colors font-semibold">Demo</a>
+                <a href="#testimonials" class="text-white hover:text-mta-yellow transition-colors font-semibold">Reviews</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section --><section class="relative h-screen mta-bg-gradient overflow-hidden flex flex-col justify-center items-center text-center px-4">
+        <div class="relative z-10">
+            <h1 class="text-5xl md:text-8xl font-black mb-6 text-mta-yellow drop-shadow-lg animate-fade-in-down">THE CITY IS YOUR BOARD</h1>
+            <h2 class="text-3xl md:text-5xl font-bold mb-8 text-white drop-shadow-md animate-fade-in-up">CATCH PUFF DADDY</h2>
+            
+            <!-- Hype Counter --><div class="bg-mta-red p-6 rounded-xl shadow-2xl mb-12 border-4 border-mta-yellow transform hover:scale-[1.02] transition-transform duration-500">
+                <div class="flex items-center justify-center">
+                    <i data-feather="alert-circle" class="text-mta-yellow mr-2 w-6 h-6 md:w-8 h-8"></i>
+                    <span class="text-xl md:text-4xl font-mono font-bold text-white tracking-wider">12,000,000+ PRE-ORDERS</span>
+                </div>
+            </div>
+            
+            <a href="#preorder" class="bg-mta-yellow hover:bg-white text-black font-extrabold py-4 px-10 rounded-full text-xl md:text-2xl transition-all duration-300 transform hover:scale-110 shadow-xl flex items-center justify-center mx-auto max-w-sm">
+                <i data-feather="shopping-cart" class="mr-3 w-5 h-5"></i> PRE-ORDER NOW
+            </a>
+        </div>
+    </section>
+
+    <!-- USP Section --><section class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">THE ULTIMATE SUBWAY CHASE</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-mta-blue p-8 rounded-lg text-center shadow-lg transition duration-300 hover:shadow-2xl hover:bg-opacity-90">
+                    <i data-feather="map" class="w-12 h-12 mx-auto mb-4 text-mta-yellow"></i>
+                    <h3 class="text-2xl font-bold mb-4">Strategize</h3>
+                    <p>Plan your moves across Manhattan's subway lines to corner the fugitive</p>
+                </div>
+                <div class="bg-mta-red p-8 rounded-lg text-center shadow-lg transition duration-300 hover:shadow-2xl hover:bg-opacity-90">
+                    <i data-feather="search" class="w-12 h-12 mx-auto mb-4 text-mta-yellow"></i>
+                    <h3 class="text-2xl font-bold mb-4">Hunt</h3>
+                    <p>Track Puff Daddy's movements and predict his next location</p>
+                </div>
+                <div class="bg-mta-green p-8 rounded-lg text-center shadow-lg transition duration-300 hover:shadow-2xl hover:bg-opacity-90">
+                    <i data-feather="eye-off" class="w-12 h-12 mx-auto mb-4 text-mta-yellow"></i>
+                    <h3 class="text-2xl font-bold mb-4">Hide</h3>
+                    <p>As Puff Daddy, use wild cards and subway tickets to evade capture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Demo Section --><section id="demo" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">THE CHASE IS ON</h2>
+            <div class="bg-black p-8 rounded-lg shadow-2xl">
+                <div class="flex justify-between items-center mb-8 flex-wrap">
+                    <div class="bg-mta-red p-4 rounded-lg mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold">TURN: <span id="turn-counter" class="text-mta-yellow">1</span>/15</h3>
+                    </div>
+                    <div class="bg-mta-blue p-4 rounded-lg">
+                        <h3 class="text-xl font-bold">STATUS: <span id="status-indicator" class="text-mta-yellow">HUNTING</span></h3>
+                    </div>
+                </div>
+                
+                <!-- Working Interactive Map Demo --><!-- FIX: Replaced the local file path with a reliable, guaranteed-to-load placeholder image URL. --><div class="relative h-[500px] rounded-lg overflow-hidden mb-8 shadow-inner border-4 border-mta-yellow bg-mta-yellow">
+                    <!-- Image for the map background - now a guaranteed placeholder --><img 
+                        src="https://placehold.co/800x500/EEEEEE/222222?text=NYC+Subway+Map+Placeholder"
+                        alt="Interactive NYC Subway Map" 
+                        class="w-full h-full object-cover absolute top-0 left-0 z-0"
+                    >
+                    
+                    <!-- SVG map overlay for lines and stations (z-10 to be on top of image) --><svg id="subway-svg" class="w-full h-full absolute top-0 left-0 z-10" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+                    
+                    <!-- Game End Message Overlay --><div id="game-message" class="absolute inset-0 bg-black/80 flex items-center justify-center hidden z-30">
+                        <div class="text-center p-8 bg-mta-yellow text-black rounded-lg shadow-2xl">
+                            <h3 id="message-text" class="text-3xl font-bold mb-4"></h3>
+                            <button id="reset-button" class="bg-mta-red text-white py-2 px-4 rounded font-bold hover:bg-mta-blue transition">Play Again</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-mta-green p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-mta-yellow">Detectives Win</h3>
+                        <p>If Puff Daddy is caught before turn 15</p>
+                    </div>
+                    <div class="bg-mta-red p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-mta-yellow">Puff Daddy Wins</h3>
+                        <p>If he evades capture for all 15 turns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-order Section --><section id="preorder" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">JOIN THE MANHUNT</h2>
+            <div class="max-w-4xl mx-auto bg-mta-blue p-8 rounded-xl shadow-2xl border-4 border-mta-red">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                        <img 
+                            src="https://placehold.co/640x360/FCCC0A/000000?text=GAME+BOX" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/640x360/FCCC0A/000000?text=GAME+BOX';"
+                            alt="Manhattan Manhunt Game Box" 
+                            class="rounded-lg shadow-xl w-full h-auto"
+                        >
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold mb-4">Manhattan Manhunt</h3>
+                        <p class="mb-6 text-white">The ultimate hidden-movement board game set in NYC's subway system</p>
+                        
+                        <div class="mb-6 space-y-2">
+                            <div class="flex items-center">
+                                <i data-feather="clock" class="mr-2 text-white"></i>
+                                <span>Average Playtime: <span class="font-bold">15m 23s</span></span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="dollar-sign" class="mr-2 text-white"></i>
+                                <span>Production Cost: <span class="font-bold text-mta-red">$6.70</span> per unit</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="text-xl font-bold mb-2">What's Included:</h4>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Game board of Manhattan subway system</li>
+                                <li>3 Detective pawns</li>
+                                <li>1 Puff Daddy fugitive pawn</li>
+                                <li>15 Turn cards</li>
+                                <li>5 Wild cards</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="w-full bg-mta-red hover:bg-mta-yellow text-white hover:text-black font-bold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center text-xl shadow-lg hover:shadow-xl">
+                            <i data-feather="shopping-cart" class="mr-2"></i> PRE-ORDER NOW - $19.99
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials --><section id="testimonials" class="py-20 bg-mta-gray">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-mta-yellow">WHAT THEY'RE SAYING</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-black p-8 rounded-lg shadow-xl border border-mta-red">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                    </div>
+                    <p class="italic mb-4 text-gray-300">"This game captures the thrill of the chase like nothing else. I play it with my kids every weekend!"</p>
+                    <p class="font-bold text-mta-yellow">- Sean Combs</p>
+                </div>
+                <div class="bg-black p-8 rounded-lg shadow-xl border border-mta-blue">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                    </div>
+                    <p class="italic mb-4 text-gray-300">"The perfect blend of strategy and suspense. Our game nights will never be the same."</p>
+                    <p class="font-bold text-mta-yellow">- Timo Kronish</p>
+                </div>
+                <div class="bg-black p-8 rounded-lg shadow-xl border border-mta-green">
+                    <div class="flex items-center mb-4">
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                        <i data-feather="star" class="text-mta-yellow mr-1 fill-current w-5 h-5"></i>
+                    </div>
+                    <p class="italic mb-4 text-gray-300">"95% of our testers preferred this over Monopoly. Need we say more?"</p>
+                    <p class="font-bold text-mta-yellow">- Game Testers United</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rulebook Section --><section class="py-20 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-center mb-12 text-mta-yellow">GET A SNEAK PEEK AT THE RULES</h2>
+            <div class="max-w-3xl mx-auto bg-mta-blue p-6 rounded-xl shadow-2xl border-4 border-mta-red">
+                <img 
+                    src="https://lh3.googleusercontent.com/keep-bbsk/AFgXFlKursBDqvNiP89V7md4EXE_nNvh0vnT9HAA_fbQUL7E22_bs9LX1hKU_nnB46ugbRNUcAsuUvgRxV_fho_2ArbimJl60KgeCVQoW7YWmG3KOVd3gAgfTQ=s2000?text=RULEBOOK+PREVIEW" 
+                    alt="Rulebook Preview" 
+                    class="rounded-lg shadow-xl w-full h-auto"
+                >
+                <p class="mt-6 text-white text-lg">Curious about how to play? Download the full rulebook <a href="#" class="text-mta-yellow hover:underline font-bold">here</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component (Simplified for one-file context) --><footer class="bg-mta-blue text-white p-8">
         <div class="container mx-auto text-center">
-            <p>&copy; 2025 Subway Showdown: Puff Daddy Chase. All Rights Reserved. Not officially affiliated with the MTA.(Website By Timo)</p>
+            <p>&copy; 2025 Subway Showdown: Puff Daddy Chase. All Rights Reserved. Not officially affiliated with the MTA.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-mta-yellow hover:text-white transition-colors"><i data-feather="twitter" class="w-6 h-6"></i></a>
+                <a href="#" class="text-mta-yellow hover:text-white transition-colors"><i data-feather="instagram" class="w-6 h-6"></i></a>
+                <a href="#" class="text-mta-yellow hover:text-white transition-colors"><i data-feather="facebook" class="w-6 h-6"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+
+        // Simple smooth scrolling for navigation (optional)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // --- GAME LOGIC FOR DEMO ---
+
+        const MAX_TURNS = 15;
+        let currentTurn = 1;
+        let detectivePositionId = 3; // Starts at Penn Station
+        let fugitivePositionId = 0;   // Initialized randomly on game start
+
+        // Updated coordinates and connections for Manhattan-only chase. Brooklyn (ID 6) removed.
+        const stations = {
+            1: { name: "Times Square", x: 40, y: 48, connections: [2, 3] },
+            2: { name: "Grand Central", x: 60, y: 50, connections: [1, 4] },
+            3: { name: "Penn Station", x: 45, y: 60, connections: [1, 5] },
+            // Wall Street (4) and Central Park (5) connections are updated
+            4: { name: "Wall Street", x: 55, y: 80, connections: [2, 5] }, 
+            5: { name: "Central Park", x: 40, y: 30, connections: [3] },
+            // Station 6 (Brooklyn) has been removed.
+        };
+
+        const REVEAL_TURNS = [3, 7, 11];
+
+        const svg = document.getElementById('subway-svg');
+        const turnCounter = document.getElementById('turn-counter');
+        const statusIndicator = document.getElementById('status-indicator');
+        const gameMessage = document.getElementById('game-message');
+        const messageText = document.getElementById('message-text');
+        const resetButton = document.getElementById('reset-button');
+        
+        let detectivePawn;
+        let fugitivePawn;
+
+        function getRandomConnection(id) {
+            const connections = stations[id].connections;
+            const randomIndex = Math.floor(Math.random() * connections.length);
+            return connections[randomIndex];
+        }
+
+        function moveFugitive() {
+            // Fugitive moves randomly to a connected station
+            fugitivePositionId = getRandomConnection(fugitivePositionId);
+        }
+
+        function drawMap() {
+            // Clear existing elements
+            svg.innerHTML = '';
+
+            // Draw Lines (Connections)
+            const linesGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            linesGroup.id = 'subway-lines';
+            svg.appendChild(linesGroup);
+
+            Object.entries(stations).forEach(([id, station]) => {
+                const startX = station.x;
+                const startY = station.y;
+
+                station.connections.forEach(connectedId => {
+                    // Prevent drawing the same line twice (e.g., 1->2 and 2->1)
+                    if (connectedId > parseInt(id)) {
+                        const targetStation = stations[connectedId];
+                        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                        line.setAttribute('x1', startX);
+                        line.setAttribute('y1', startY);
+                        line.setAttribute('x2', targetStation.x);
+                        line.setAttribute('y2', targetStation.y);
+                        line.setAttribute('class', 'line-segment');
+                        linesGroup.appendChild(line);
+                    }
+                });
+            });
+
+            // Draw Stations (Nodes)
+            const stationsGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            stationsGroup.id = 'subway-stations';
+            svg.appendChild(stationsGroup);
+
+            Object.entries(stations).forEach(([id, station]) => {
+                const node = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                node.setAttribute('cx', station.x);
+                node.setAttribute('cy', station.y);
+                node.setAttribute('r', 3); // Radius
+                node.setAttribute('fill', 'var(--tw-colors-mta-yellow)');
+                node.setAttribute('data-station-id', id);
+                node.setAttribute('class', 'station-node');
+                
+                node.addEventListener('click', () => handleMove(parseInt(id)));
+                
+                stationsGroup.appendChild(node);
+
+                // Add text label
+                const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                text.setAttribute('x', station.x);
+                text.setAttribute('y', station.y - 4);
+                text.setAttribute('text-anchor', 'middle');
+                text.setAttribute('font-size', '2');
+                // Text is black to be visible over the light-colored map image
+                text.setAttribute('fill', 'black'); 
+                text.textContent = stations[id].name;
+                stationsGroup.appendChild(text);
+            });
+        }
+
+        function drawPawns() {
+            // Draw Detective Pawn (Blue)
+            detectivePawn = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            detectivePawn.setAttribute('r', 2);
+            detectivePawn.setAttribute('fill', 'var(--tw-colors-mta-blue)');
+            detectivePawn.setAttribute('class', 'player-pawn');
+            svg.appendChild(detectivePawn);
+
+            // Draw Fugitive Pawn (Red, initially transparent/hidden)
+            fugitivePawn = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            fugitivePawn.setAttribute('r', 2);
+            fugitivePawn.setAttribute('fill', 'var(--tw-colors-mta-red)');
+            fugitivePawn.setAttribute('class', 'player-pawn');
+            svg.appendChild(fugitivePawn);
+
+            updatePawnPositions();
+        }
+
+        function updatePawnPositions() {
+            const detectiveStation = stations[detectivePositionId];
+            detectivePawn.setAttribute('cx', detectiveStation.x);
+            detectivePawn.setAttribute('cy', detectiveStation.y);
+
+            const isRevealed = REVEAL_TURNS.includes(currentTurn);
+            const fugitiveStation = stations[fugitivePositionId];
+
+            if (isRevealed) {
+                fugitivePawn.setAttribute('cx', fugitiveStation.x);
+                fugitivePawn.setAttribute('cy', fugitiveStation.y);
+                fugitivePawn.style.opacity = 1;
+                statusIndicator.textContent = 'REVEALED';
+                statusIndicator.classList.remove('text-mta-yellow');
+                statusIndicator.classList.add('text-mta-red');
+
+            } else {
+                // If fugitive is not revealed, hide the pawn
+                fugitivePawn.style.opacity = 0;
+                statusIndicator.textContent = 'HUNTING';
+                statusIndicator.classList.remove('text-mta-red');
+                statusIndicator.classList.add('text-mta-yellow');
+            }
+        }
+
+        function checkWinCondition() {
+            if (detectivePositionId === fugitivePositionId) {
+                endGame("SUCCESS! Puff Daddy has been apprehended at " + stations[detectivePositionId].name + "!");
+                return true;
+            }
+            if (currentTurn >= MAX_TURNS) {
+                endGame("FAILURE! Puff Daddy evaded capture! He was last seen at " + stations[fugitivePositionId].name + ".");
+                // Ensure fugitive is revealed on loss
+                fugitivePawn.style.opacity = 1; 
+                return true;
+            }
+            return false;
+        }
+
+        function handleMove(targetId) {
+            const currentConnections = stations[detectivePositionId].connections;
+            
+            // 1. Check if the move is valid (connected station)
+            if (!currentConnections.includes(targetId)) {
+                console.log("Invalid move: Not a connected station.");
+                return;
+            }
+
+            // 2. Execute Detective Move
+            detectivePositionId = targetId;
+            
+            // 3. Check for immediate win (if Detective catches Puff Daddy on move)
+            if (checkWinCondition()) return;
+
+            // 4. Fugitive's Turn
+            moveFugitive();
+            
+            // 5. Increment Turn and Update UI
+            currentTurn++;
+            turnCounter.textContent = currentTurn;
+
+            // 6. Update Pawn positions and visibility
+            updatePawnPositions();
+
+            // 7. Check for game over (loss)
+            checkWinCondition();
+        }
+
+        function endGame(message) {
+            // Disable further movement
+            svg.style.pointerEvents = 'none';
+            
+            // Show message overlay
+            messageText.textContent = message;
+            gameMessage.classList.remove('hidden');
+        }
+        
+        function initializeGame() {
+            // Set initial state
+            currentTurn = 1;
+            detectivePositionId = 3; 
+            
+            // Randomly set fugitive start position (must not be detective start position)
+            let initialFugitivePos;
+            // Object.keys(stations).length is now 5
+            do {
+                 initialFugitivePos = Math.floor(Math.random() * Object.keys(stations).length) + 1;
+            } while (initialFugitivePos === detectivePositionId);
+            fugitivePositionId = initialFugitivePos;
+
+            // Reset UI
+            turnCounter.textContent = currentTurn;
+            statusIndicator.textContent = 'HUNTING';
+            statusIndicator.classList.remove('text-mta-red');
+            statusIndicator.classList.add('text-mta-yellow');
+            gameMessage.classList.add('hidden');
+            svg.style.pointerEvents = 'auto';
+
+            // Redraw map and pawns
+            drawMap();
+            drawPawns();
+            updatePawnPositions(); // Set initial positions/visibility
+        }
+
+        resetButton.addEventListener('click', initializeGame);
+
+        // Start the game when the page loads
+        window.onload = function() {
+            feather.replace();
+            initializeGame();
+        };
+
+        // Reinitialize feather icons after load
+        feather.replace();
+    </script>
+</body>
+</html>" 
+                    alt="Rulebook Preview" 
+                    class="rounded-lg shadow-xl w-full h-auto"
+                >
+                <p class="mt-6 text-white text-lg">Curious about how to play? Download the full rulebook <a href="#" class="text-mta-yellow hover:underline font-bold">here</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component (Simplified for one-file context) --><footer class="bg-mta-blue text-white p-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Subway Showdown: Puff Daddy Chase. All Rights Reserved. Not officially affiliated with the MTA.</p>
             <div class="flex justify-center space-x-4 mt-4">
                 <a href="#" class="text-mta-yellow hover:text-white transition-colors"><i data-feather="twitter" class="w-6 h-6"></i></a>
                 <a href="#" class="text-mta-yellow hover:text-white transition-colors"><i data-feather="instagram" class="w-6 h-6"></i></a>
